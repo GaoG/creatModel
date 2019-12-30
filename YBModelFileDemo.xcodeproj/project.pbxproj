@@ -12,7 +12,6 @@
 		231F752D2241D2FD005A59CB /* YBMFFileHHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 231F752C2241D2FD005A59CB /* YBMFFileHHandler.m */; };
 		231F75302241D30B005A59CB /* YBMFFileMHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 231F752F2241D30B005A59CB /* YBMFFileMHandler.m */; };
 		231F75332241E130005A59CB /* YBMFCodeForParentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 231F75322241E130005A59CB /* YBMFCodeForParentHandler.m */; };
-		231F7692224298A2005A59CB /* weibo_0.json in Resources */ = {isa = PBXBuildFile; fileRef = 231F7691224298A2005A59CB /* weibo_0.json */; };
 		233D643A2240AE2400B74D30 /* YBMFNameHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 233D64392240AE2400B74D30 /* YBMFNameHandler.m */; };
 		23949BD22271B74C00A65340 /* NSObject+YBMFConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 23949BD12271B74C00A65340 /* NSObject+YBMFConfig.m */; };
 		23949BDE2271C23300A65340 /* WBTrendsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 23949BDD2271C23300A65340 /* WBTrendsModel.m */; };
@@ -42,7 +41,6 @@
 		231F75312241E130005A59CB /* YBMFCodeForParentHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YBMFCodeForParentHandler.h; sourceTree = "<group>"; };
 		231F75322241E130005A59CB /* YBMFCodeForParentHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YBMFCodeForParentHandler.m; sourceTree = "<group>"; };
 		231F753B22425FD3005A59CB /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		231F7691224298A2005A59CB /* weibo_0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = weibo_0.json; sourceTree = "<group>"; };
 		233D64382240AE2400B74D30 /* YBMFNameHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YBMFNameHandler.h; sourceTree = "<group>"; };
 		233D64392240AE2400B74D30 /* YBMFNameHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YBMFNameHandler.m; sourceTree = "<group>"; };
 		23949BD02271B74C00A65340 /* NSObject+YBMFConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+YBMFConfig.h"; sourceTree = "<group>"; };
@@ -147,7 +145,6 @@
 		23EB9F1C223F7D3800EE40FE /* YBModelFileDemo */ = {
 			isa = PBXGroup;
 			children = (
-				231F7691224298A2005A59CB /* weibo_0.json */,
 				23EB9F33223F7DBC00EE40FE /* YBModelFile */,
 				23EB9F1D223F7D3800EE40FE /* AppDelegate.h */,
 				23EB9F1E223F7D3800EE40FE /* AppDelegate.m */,
@@ -257,7 +254,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				231F7692224298A2005A59CB /* weibo_0.json in Resources */,
 				23EB9F2A223F7D3900EE40FE /* LaunchScreen.storyboard in Resources */,
 				23EB9F27223F7D3900EE40FE /* Assets.xcassets in Resources */,
 				23EB9F25223F7D3800EE40FE /* Main.storyboard in Resources */,
