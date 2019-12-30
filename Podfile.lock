@@ -1,0 +1,29 @@
+PODS:
+  - IQKeyboardManager (6.5.4)
+  - MJExtension (3.0.15.1)
+  - WHToast (0.0.3)
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - IQKeyboardManager
+  - MJExtension
+  - WHToast
+  - YYModel
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - MJExtension
+    - YYModel
+  trunk:
+    - IQKeyboardManager
+    - WHToast
+
+SPEC CHECKSUMS:
+  IQKeyboardManager: 72b359cd7e777e3a984cedbe05f8da45320cbb63
+  MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
+  WHToast: 30d7f1734ff57b391da4050fab13a2af0e95638c
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+
+PODFILE CHECKSUM: 62e528c858d6953e608935a9316ff68e2d28d0c1
+
+COCOAPODS: 1.8.4

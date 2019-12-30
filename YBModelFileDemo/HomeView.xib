@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HomeView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="986-cR-TgO">
+                    <rect key="frame" x="10" y="110" width="394" height="352"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zyo-uM-QAB">
+                    <rect key="frame" x="51" y="676" width="313" height="40"/>
+                    <color key="backgroundColor" red="1" green="0.39215686274509803" blue="0.0" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="E3g-vu-YP1"/>
+                    </constraints>
+                    <state key="normal" title="确定生成Model"/>
+                    <connections>
+                        <action selector="submitButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="tdf-TJ-o8L"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请在下面填写json数据" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mg1-TF-mHL">
+                    <rect key="frame" x="20" y="80" width="374" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="IFg-mz-ShE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" red="1" green="0.3921568627" blue="0.0" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t7i-4a-ca6">
+                    <rect key="frame" x="30" y="591" width="162" height="35"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="omc-mM-Rnl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                    <state key="normal" title="MJExtension">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" title="已选中MJExtension">
+                        <color key="titleColor" red="1" green="0.3921568627" blue="0.0" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="mjButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="pF9-tA-GWL"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NBT-dJ-Xia">
+                    <rect key="frame" x="222" y="591" width="162" height="35"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="xcl-uV-rtG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                    <state key="normal" title="YYModel">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" title="已选中YYModel">
+                        <color key="titleColor" red="1" green="0.3921568627" blue="0.0" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="yyButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="YxB-1I-mfp"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择第三方生成model 的方式,默认是MJExtension" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="maO-xl-MQH">
+                    <rect key="frame" x="20" y="561" width="374" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="yM7-Cg-UXi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="1" green="0.3921568627" blue="0.0" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请填写model类的名称" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bt2-Pm-yqd">
+                    <rect key="frame" x="10" y="492" width="394" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="sCa-yu-ELU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Zyo-uM-QAB" firstAttribute="top" secondItem="t7i-4a-ca6" secondAttribute="bottom" constant="50" id="5aY-EM-tXv"/>
+                <constraint firstItem="Zyo-uM-QAB" firstAttribute="top" secondItem="NBT-dJ-Xia" secondAttribute="bottom" constant="50" id="8Pe-ub-d0E"/>
+                <constraint firstItem="Bt2-Pm-yqd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="9BO-w0-w8D"/>
+                <constraint firstAttribute="trailing" secondItem="mg1-TF-mHL" secondAttribute="trailing" constant="20" id="9Rc-cZ-D9U"/>
+                <constraint firstAttribute="trailing" secondItem="986-cR-TgO" secondAttribute="trailing" constant="10" id="9jO-pw-l6v"/>
+                <constraint firstItem="t7i-4a-ca6" firstAttribute="top" secondItem="maO-xl-MQH" secondAttribute="bottom" constant="10" id="ARt-ai-JPP"/>
+                <constraint firstItem="t7i-4a-ca6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="E8N-KT-TpC"/>
+                <constraint firstItem="NBT-dJ-Xia" firstAttribute="leading" secondItem="t7i-4a-ca6" secondAttribute="trailing" constant="30" id="EWe-uj-rHc"/>
+                <constraint firstItem="mg1-TF-mHL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="H5x-85-hn4"/>
+                <constraint firstItem="986-cR-TgO" firstAttribute="top" secondItem="mg1-TF-mHL" secondAttribute="bottom" constant="10" id="OEb-he-hhj"/>
+                <constraint firstAttribute="trailing" secondItem="Bt2-Pm-yqd" secondAttribute="trailing" constant="10" id="PhB-bZ-Fhw"/>
+                <constraint firstItem="NBT-dJ-Xia" firstAttribute="height" secondItem="t7i-4a-ca6" secondAttribute="height" id="QMH-a2-XG9"/>
+                <constraint firstItem="986-cR-TgO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="Sry-T9-5qL"/>
+                <constraint firstAttribute="trailing" secondItem="NBT-dJ-Xia" secondAttribute="trailing" constant="30" id="Tlc-in-xnT"/>
+                <constraint firstItem="maO-xl-MQH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="Usq-Zz-5Zb"/>
+                <constraint firstItem="maO-xl-MQH" firstAttribute="top" secondItem="Bt2-Pm-yqd" secondAttribute="bottom" constant="35" id="VzT-C6-OBK"/>
+                <constraint firstItem="mg1-TF-mHL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="80" id="WSq-Gy-4pY"/>
+                <constraint firstItem="NBT-dJ-Xia" firstAttribute="width" secondItem="t7i-4a-ca6" secondAttribute="width" id="m2i-Ts-nKw"/>
+                <constraint firstAttribute="bottom" secondItem="Zyo-uM-QAB" secondAttribute="bottom" constant="20" id="nf4-jp-PLx"/>
+                <constraint firstAttribute="trailing" secondItem="Zyo-uM-QAB" secondAttribute="trailing" constant="50" id="vRk-bt-eDK"/>
+                <constraint firstAttribute="trailing" secondItem="maO-xl-MQH" secondAttribute="trailing" constant="20" id="wPr-Lj-YcL"/>
+                <constraint firstItem="Bt2-Pm-yqd" firstAttribute="top" secondItem="986-cR-TgO" secondAttribute="bottom" constant="30" id="xlU-4I-DVI"/>
+                <constraint firstItem="Zyo-uM-QAB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="51" id="yqu-27-Trl"/>
+            </constraints>
+            <connections>
+                <outlet property="classNameText" destination="Bt2-Pm-yqd" id="3w3-bv-vqR"/>
+                <outlet property="mjBut" destination="t7i-4a-ca6" id="bnE-WN-ary"/>
+                <outlet property="myTextView" destination="986-cR-TgO" id="Oav-4f-h2c"/>
+                <outlet property="submitBut" destination="Zyo-uM-QAB" id="F4Z-Wc-Rzo"/>
+                <outlet property="yyBut" destination="NBT-dJ-Xia" id="IiO-am-mxX"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="130.43478260869566"/>
+        </view>
+    </objects>
+</document>
